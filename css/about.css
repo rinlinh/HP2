@@ -68,7 +68,7 @@ h3 {
 }
 
 .overview_list {
-  width: 55%;
+  width: 60%;
   padding: 30px;
   padding-left: 64px;
   border: 2px solid #ddd;
@@ -78,11 +78,12 @@ h3 {
   display: flex;
   width: 100%;
   margin-bottom: 10px;
+  justify-content: space-around;
 }
 
 .list_item h4 {
   display: inline-block;
-  width: 200px;
+  width: 300px;
   padding-right: 30px;
   font-size: 20px;
   align-items: center;
@@ -95,8 +96,13 @@ h3 {
   line-height: 1.7;
 }
 
-.list_txt p {
-  padding: 0;
+/* .list_txt {
+  width: 200px;
+} */
+
+.list_item .list_txt p {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .overview_vacant {
@@ -106,11 +112,11 @@ h3 {
 
 .overview_imgbg {
   width: 60%;
-  height: 450px;
+  height: 50%;
   background: #fff;
   position: relative;
   top: 20%;
-  left: 30%;
+  left: 50%;
 }
 
 .overview_img {
@@ -184,10 +190,46 @@ h3 {
   padding-left: 10px;
 }
 
+.time p:nth-of-type(2n) {
+  padding-left: 20px;
+}
 
 
 
 /*======レスポンシブ======*/
+
+@media screen and (max-width: 1240px) {
+
+  .access {
+    width: 70%;
+    margin-left: 10%;
+  }
+
+}
+
+@media screen and (max-width: 990px) {
+
+  /*===overview===*/
+  .overview_list {
+    padding: 16px;
+  }
+
+  .overview_imgbg {
+    width: 80%;
+    height: 40%;
+  }
+
+  /*===map===*/
+  .access {
+    width: 60%;
+    padding: 20px;
+  }
+
+  .time {
+    display: block;
+    width: 100%;
+  }
+}
 
 @media screen and (max-width: 768px) {
 
@@ -214,6 +256,10 @@ h3 {
   .overview_list {
     width: 70%;
     margin: 50px auto;
+  }
+
+  .list_item p {
+    font-size: 14px;
   }
 
   .list_item h4 {
@@ -271,14 +317,19 @@ h3 {
   }
 
   .access {
-    width: 50%;
-    margin-left: 184px;
+    width: 70%;
+    /* margin: 0 auto; */
+    margin-left: 124px;
+  }
+
+  .time {
+    display: flex;
   }
 
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 530px) {
 
   /*===top===*/
   .top {

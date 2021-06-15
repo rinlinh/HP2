@@ -129,16 +129,33 @@ section h3 {
 
 
 .btn_more {
-  display: inline-block;
+  display: block;
   width: 100px;
-  margin: 0 50% 50px;
-  transform: translateX(-50%);
+  margin: 0 auto;
+  /* transform: translateX(-50%); */
   text-align: center;
 }
 
 
 
 /*======レスポンシブ======*/
+
+@media screen and (max-width: 990px) {
+
+  .str_all, 
+  .care_all, 
+  .dryer_all {
+    width: 95%;
+  }
+
+  .str_list li, 
+  .care_list li, 
+  .dryer_list li {
+    width: 33%;
+    margin: 16px;
+  }
+
+}
 
 @media screen and (max-width: 768px) {
 

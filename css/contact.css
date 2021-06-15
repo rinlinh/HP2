@@ -133,6 +133,7 @@ textarea {
 
 /*======レスポンシブ======*/
 
+
 @media screen and (max-width: 768px) {
 
   /*===top===*/
@@ -150,6 +151,10 @@ textarea {
   .contact_all {
     width: 80%;
     margin: 0 auto;
+  }
+
+  .subttl {
+    width: 248px;
   }
 
   input#name, input#email {

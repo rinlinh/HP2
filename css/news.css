@@ -135,6 +135,13 @@
 
 
 /*======レスポンシブ======*/
+@media screen and (max-width: 990px) {
+
+  .article_list {
+    width: 100%;
+  }
+  
+}
 
 @media screen and (max-width: 768px) {
 
