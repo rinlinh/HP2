@@ -110,9 +110,13 @@
   z-index: 10;
 }
 
-.top .top_txt h1 {
+.top .top_txt h2 {
   font-size: 48px;
 }
+
+  .top .top_txt h2 span {
+    display: inline-block;
+  }
 
 .top .top_txt p {
   font-size: 24px;
@@ -363,6 +367,7 @@
 
 
 /*======レスポンシブ======*/
+
 @media screen and (max-width: 990px) {
   /*===top===*/
   .top .top_bg::after { 
@@ -374,10 +379,6 @@
 
   .top .top_txt { 
     width: 350px;
-  }
-
-  .top .top_txt h1 {
-    font-size: 32px;
   }
 
   .top .top_txt p {
