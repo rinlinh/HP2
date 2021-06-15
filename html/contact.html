@@ -32,18 +32,84 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-    </div>
-    <!--.header_all-->
+    </div><!--.header_all-->
+    <p class="drawer"></p>
   </header>
 
   <main>
+    <section class="top">
+      <div class="top_all">
+        <div class="top_bg"></div>
+        <div class="top_txt">
+          <h2>Contact</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci ad iure saepe distinctio consequatur aut
+            libero minima totam, quia modi consectetur dolorum! Impedit aliquam praesentium corrupti consequuntur, expedita
+            aspernatur iure!</p>
+        </div><!--.top_txt-->
+      </div><!--.top_all-->
+    </section>
 
+    <section class="breadcrumb">
+      <ul>
+        <li>
+          <a href="../index.html"><span>Home</span></a>
+        </li>
+        <li>
+          <a href="contact.html"><span class="here">Contact</span></a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="contact">
+      <div class="contact_bg"></div><!--.contact_bg-->
+      <div class="contact_all">
+        <form action="mail.php" class="contact_form" id="form" method="POST">
+          <div class="contact_item">
+            <label for="name" class="subttl">Name</label>
+            <input type="text" id="name">
+          </div>
+          <div class="contact_item">
+            <label for="email" class="subttl">Email</label>
+            <input type="email" id="email">
+          </div>
+          <div class="contact_item option">
+            <label for="subject" class="subttl">Category</label>
+            <select>
+              <optgroup value>
+                <option class="category" value="Choose" hidden></option>
+                <option class="category" value="aaa">aaa</option>
+                <option class="category" value="bbb">bbb</option>
+                <option class="category" value="ccc">ccc</option>
+              </optgroup>  
+            </select>
+          </div><!--.contact_item option-->    
+          <div class="contact_item">
+            <label for="message" class="subttl msttl">Message</label>
+            <textarea id="message"></textarea>
+          </div>
+          <button type="submit" class="btn_more">submit</button>
+        </form>
+      </div><!--.contact_all-->
+    </section>
 
   </main>
 
   <footer>
-
-
+    <div class="footer_all">
+      <p class="footer_logo">
+        <a href="../index.html"><img src="../img/logo.jpg" alt="ロゴ画像"></a>
+      </p>
+      <div class="sns">
+        <a href="#"><img src="../img/twitter_logo.png" alt="ツイッターロゴ"> </a>
+        <a href="#"><img src="../img/facebook_logo.png" alt="フェイスブックロゴ"></a>
+      </div><!--.sns-->
+      <ul class="footer_list">
+        <li><a href="about.html">About</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div><!--.footer_all-->
   </footer>
 
   <!--javascript-->

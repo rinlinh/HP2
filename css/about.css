@@ -1,0 +1,341 @@
+
+
+/*======top======*/
+.top_all {
+  width: 100%;
+  height: 500px;
+  box-shadow: #ddd 0px 2px 2px 2px;
+  background: url(../img/about_top.jpg) center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: -20;
+}
+
+/* .top_all::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 500px;
+  background: rgba(0, 0, 0, .6);
+  background-attachment: fixed;
+  z-index: -10;
+} */
+
+
+.top_txt {
+  display: inline-block;
+  width: 40%;
+  color: #fff;
+  text-shadow: #333 2px 2px 2px;
+  background-attachment: fixed;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  z-index: -5;
+}
+
+.top_txt h2 {
+  font-size: 48px;
+}
+
+.top_txt p {
+  font-size: 16px;
+}
+
+
+/*======overview======*/
+.overview {
+  width: 100%;
+  height: 650px;
+  margin-bottom: 100px;
+  background: #eee; 
+}
+
+.overview_all {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+
+h3 {
+  padding-top: 30px;
+  font-size: 48px;
+}
+
+.overview_inner {
+  display:  flex;
+}
+
+.overview_list {
+  width: 55%;
+  padding: 30px;
+  padding-left: 64px;
+  border: 2px solid #ddd;
+}
+
+.list_item {
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.list_item h4 {
+  display: inline-block;
+  width: 200px;
+  padding-right: 30px;
+  font-size: 20px;
+  align-items: center;
+}
+
+.list_item p {
+  width: 250px;
+  padding: 10px 0;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.list_txt p {
+  padding: 0;
+}
+
+.overview_vacant {
+  width: 45%;
+  position: relative;
+}
+
+.overview_imgbg {
+  width: 60%;
+  height: 450px;
+  background: #fff;
+  position: relative;
+  top: 20%;
+  left: 30%;
+}
+
+.overview_img {
+  width: 100%;
+  position: absolute;
+  top: 40px;
+  left: -30px;
+}
+
+.overview_img img {
+  width: 100%;
+  height: auto;
+}
+
+
+/*======map======*/
+.map {
+  width: 100%;
+  height: 600px;
+  margin-bottom: 100px;
+}
+
+.map_all {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.map_inner {
+  display: flex;
+}
+
+.map_google {
+  width: 50%;
+}
+
+.map_google iframe {
+  width: 80%;
+  height: 400px;
+}
+
+.map_txt {
+  width: 50%;
+  height: 400px;
+}
+
+.access {
+  width: 50%;
+  margin: 0 auto;
+  padding: 50px;
+  /* background: #ddd; */
+  border: 2px solid #ddd;
+  position: relative;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.way {
+  margin-bottom: 10px;
+}
+
+.way h4 {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border-bottom: 2px solid #ddd;
+}
+
+.time {
+  display: flex;
+  padding-left: 10px;
+}
+
+
+
+
+/*======レスポンシブ======*/
+
+@media screen and (max-width: 768px) {
+
+  /*===top===*/
+  .top_txt {
+    width: 50%;
+    top: 30%;
+    left: 10%;
+  }
+
+  /*===overview===*/
+  .overview {
+    height: 800px;
+  }
+
+  .overview_all {
+    width: 95%;
+  }
+
+  .overview_inner {
+    display: block;
+  }
+
+  .overview_list {
+    width: 70%;
+    margin: 50px auto;
+  }
+
+  .list_item h4 {
+    font-size: 16px;
+  }
+
+  .overview_vacant {
+    width: 100%;
+  }
+
+  .overview_imgbg {
+    width: 0;
+    height: 0;
+  }
+
+  .overview_img {
+    width: 0;
+  }
+
+  .overview_img img {
+    width: 100%;
+    height: auto;
+  }
+
+
+  /*===map===*/
+  .map {
+    width: 100%;
+    height: 800px;
+    margin-bottom: 100px;
+  }
+
+  .map_all {
+    width: 95%;
+  }
+
+  .map_inner {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .map_google {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .map_google iframe {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .map_txt {
+    display: block;
+    width: 100%;
+  }
+
+  .access {
+    width: 50%;
+    margin-left: 184px;
+  }
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+  /*===top===*/
+  .top {
+    height: 400px;
+  }
+
+  .top_all {
+    width: 100%;
+    height: 300px;
+    background: url(../img/about_topmin.jpg) center no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .top .top_txt {
+    width: 280px;
+    padding: 10px;
+    margin: 0 auto;
+    background: rgba(10, 10, 10, .5)
+  }
+
+  section h3 {
+    font-size: 32px;
+  }
+  .list_item {
+    display: block;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .list_item p {
+    padding-left: 10px;
+  }
+
+  .map_google {
+    width: 100%;
+    height: 350px;
+    margin: 0 auto;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  .map_txt {
+    position: relative;
+  }
+
+  .access{
+    display: block;
+    width: 90%;
+    padding: 20px;
+    margin: 0;
+    position: absolute;
+    top: 224px;
+    left: 50%;
+  }
+
+}

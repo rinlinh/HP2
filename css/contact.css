@@ -1,0 +1,207 @@
+/*======top======*/
+.top_all {
+  width: 100%;
+  height: 500px;
+  box-shadow: #ddd 0px 2px 2px 2px;
+  background: url(../img/contact_top.jpg) center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: -20;
+}
+
+/* .top_all::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 500px;
+  background: rgba(0, 0, 0, .6);
+  background-attachment: fixed;
+  z-index: -10;
+} */
+
+
+.top_txt {
+  display: inline-block;
+  width: 40%;
+  color: #fff;
+  text-shadow: #000 2px 2px 2px;
+  background-attachment: fixed;
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  z-index: -5;
+}
+
+.top_txt h2 {
+  font-size: 48px;
+}
+
+.top_txt p {
+  font-size: 16px;
+}
+
+
+/*======contact======*/
+.contact {
+  width: 100%;
+  height: 600px;
+  border-top: 2px solid #ddd;
+  background: #fff;
+  position: relative;
+  z-index: 50;
+}
+
+.contact_bg {
+  width: 100%;
+  height: 100%;
+  background: url(../img/contact_bg.jpg);
+  background-size: cover;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
+}
+
+.contact_all {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 50;
+}
+
+.contact_item {
+  display: flex;
+  margin: 32px auto;
+}
+
+form {
+  width: 60%;
+  margin: 50px auto;
+  text-align: center;
+  position: relative;
+  z-index: 100;
+}
+
+.subttl {
+  width: 150px;
+  font-size: 20px;
+}
+
+/* .subttl::after {
+  content: "必須";
+  position: absolute;
+  right: -70px;
+  top: 150%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  width: 80px;
+  line-height: 24px;
+  font-size: 15px;
+  color: #c72930;
+  border: 1px solid #c72930;
+  border-radius: 2px;
+} ちょっと可愛くないな*/
+
+.msttl::after {
+  top: 8%;
+}
+
+input#name, input#email, select {
+  width: 300px;
+}
+
+textarea {
+  width: 400px;
+  height: 150px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  padding: 7px;
+}
+
+.btn_more {
+  margin: 0 auto 150px;
+  font-family: sans-serif;
+  cursor: pointer;
+  position: relative;
+  z-index: 100;
+}
+
+
+
+/*======レスポンシブ======*/
+
+@media screen and (max-width: 768px) {
+
+  /*===top===*/
+  .top_txt {
+    width: 50%;
+    top: 30%;
+    right: 10%;
+  }
+
+  /*===contact===*/
+  .contact {
+    height: 600px;
+  }
+
+  .contact_all {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  input#name, input#email {
+    width: 400px;
+  }
+
+  select {
+    width: 400px;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+
+  /*===top===*/
+  .top {
+    height: 400px;
+  }
+
+  .top_all {
+    width: 100%;
+    height: 300px;
+    background: url(../img/contact_topmin.jpg) center no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .top .top_txt {
+    width: 280px;
+    padding: 10px;
+    margin: 0 auto;
+    background: rgba(10, 10, 10, .5)
+  }
+
+
+  form {
+    width: 300px;
+    margin: 10px;
+  }
+
+  .contact_item {
+    display: block;
+    width: 200px;
+    margin: 10px;
+    text-align: left;
+  }
+
+  .contact_item input#name,
+  .contact_item input#email,
+  .contact_item textarea,
+  select {
+    width: 250px;
+  }
+
+}
