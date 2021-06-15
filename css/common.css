@@ -66,6 +66,11 @@ header .drawer {
   visibility: hidden;
 }
 
+header .top_link {
+  visibility: hidden;
+  width: 0;
+}
+
 /*======main======*/
 /*===パンくずリスト*/
 .breadcrumb {
@@ -198,6 +203,10 @@ footer {
     z-index: 100;
   }
 
+  header .top_link {
+    visibility: visible;
+  }
+
   header .drawer::before,
   header .drawer::after {
     content: "";
@@ -246,17 +255,7 @@ footer {
     border-bottom: 3px solid #ddd;
   }
 
-  header .navbar ul::before {
-    content: "Top";
-    display: inline-block;
-    width: 280px;
-    height: 50px;
-    margin-bottom: 20px;
-    font-size: 22px;
-    border-bottom: 3px solid #ddd;
-  }
-
-  header .navbar ul li:nth-of-type(3) {
+  header .navbar ul li:nth-of-type(4) {
     visibility: hidden;
     height: 0;
     padding: 0;

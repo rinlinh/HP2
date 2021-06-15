@@ -432,8 +432,8 @@
   }
 
   .about {
-      margin-bottom: 300px; 
-    } 
+    margin-bottom: 300px; 
+  } 
 
   .about_all .about_main {
     width: 95%;
@@ -441,6 +441,10 @@
 
   .about_all .about_main .about_ttl {
     padding: 24px;
+  }
+
+  .about_ttl span {
+    display: block;
   }
 
   .about_all .about_main .about_txt {
