@@ -1,3 +1,8 @@
+
+.wrap {
+  overflow: hidden;
+}
+
 /*======top======*/
 .top_all {
   width: 100%;
@@ -96,6 +101,7 @@
 }
 
 .article_txt {
+  width: 70%;
   padding-right: 30px;
 }
 
@@ -113,8 +119,8 @@
 }
 
 .article_img {
-  width: 450px;
-  height: 350px;
+  width: 25%;
+  height: 100%;
 }
 
 .article_img img {
@@ -139,6 +145,7 @@
 
   .article_list {
     width: 100%;
+    margin: 0 auto;
   }
   
 }

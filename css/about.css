@@ -1,4 +1,7 @@
 
+.wrap {
+  overflow: hidden;
+}
 
 /*======top======*/
 .top_all {
@@ -95,10 +98,6 @@ h3 {
   font-size: 16px;
   line-height: 1.7;
 }
-
-/* .list_txt {
-  width: 200px;
-} */
 
 .list_item .list_txt p {
   padding-top: 0;
@@ -313,13 +312,19 @@ h3 {
 
   .map_txt {
     display: block;
-    width: 100%;
+    width: 85%;
+    margin: 0 auto;
   }
 
   .access {
+    display: block;
     width: 70%;
-    /* margin: 0 auto; */
-    margin-left: 124px;
+    margin-left: 0;
+    margin: 50px auto;
+    position: unset;
+    top: unset;
+    left: unset;
+    transform: none;
   }
 
   .time {
@@ -379,14 +384,9 @@ h3 {
     position: relative;
   }
 
-  .access{
-    display: block;
-    width: 90%;
-    padding: 20px;
-    margin: 0;
-    position: absolute;
-    top: 224px;
-    left: 50%;
+  .access {
+    width: 88%;
+    margin: 100px auto;
   }
 
 }
