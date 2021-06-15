@@ -178,6 +178,10 @@
   text-align: center;
 }
 
+.about .about_ttl h2 span {
+  display: inline-block;
+}
+
 .about_all .about_main .about_txt {
   width: 60%;
   padding: 50px;
